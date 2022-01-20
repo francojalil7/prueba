@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+body {
+    background-image: linear-gradient(to left bottom, #000000, #2a0f16, #4e1222, #740f2a, #9b072e);
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    /**/ grid-auto-columns: 1fr;
+    gap: px px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+.main { 
+    grid-area: main; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+}
+.main img {
+    max-width: 600px;
+    margin-left: 50px;
+}
+.main-seccion1{
+    display: flex;
+    align-items: center;
+}
+.video1{
+    margin: 50px;
+}
+/* Header main */ 
+.header { 
+    grid-area: header; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header ul {
+    list-style: none;
+    display: flex;
+    border: 3px white;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.header li{
+    list-style-type: none;
+    margin: 20px;
+}
+.header img{
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+
+
+/* Footer */
+.footer { 
+grid-area: footer; 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-family: 'Oswald', sans-serif;
+background-image:linear-gradient(rgba(19,18,18,0.98),rgba(0,0,0,0.54)), url(../images/sueño-de-pescado-publico.png);
+
+}
+.footer a{
+    text-decoration: none;
+    margin: 20px;
+    padding: 20px;
+}
+
+p {
+    display: block;
+    color: whitesmoke;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    border-width: 15px;
+}
+
+
+
+
+
+/* Estilos Discografía */
+.mainDiscografia {
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: auto auto auto auto auto auto;
+    font-family: 'Oswald', sans-serif;
+    gap: 10vh;
+    grid-template-areas:
+    ". ."
+    " disco   lista "
+    " disco2  lista2 "
+    " disco3  lista3 "
+    " disco4  lista4 "
+    " footer  footer "; 
+
+
+}
+.disco {grid-area: disco;}
+.disco2{grid-area: disco2;}
+.disco3{grid-area: disco3;}
+.disco4 {grid-area: disc4;}
+.lista{grid-area: lista;}
+.lista2{grid-area: lista2;}
+.lista3{grid-area: lista3;}
+.lista4{grid-area: lista4;}
+.footer {grid-area: footer;}
+
+.disco{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.disco2{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.disco3{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.disco4 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.lista, .lista2, .lista3, .lista4 { 
+    display: flex;
+    flex-direction: column; 
+    
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+    
+
+}
+
+.disco img, .disco2 img, .disco3 img, .disco4 img{
+    max-width: 250px;
+    max-height: 250px;
+    
+}
+
+.buttonDiscografia{
+    background-image: linear-gradient(60deg, rgb(71, 36, 36), black);}
+h3{
+    display: inline;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+}
+.sectionDiscografia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 10px 120px 15px;
+
+}
+.pDiscografia {
+    display: inline-block;
+}
+div{
+    display: inline;
+
+}
+
+/* Estilos Nosotros*/
+.divNosotros{
+    border: solid 1px red;
+    padding: 5px;
+    display: inline-block;
+    font-size: 32px;
+    width: 1000px;
+    height: 200vh;
+    width: 100vh;
+}
+.divNosotros p {
+    margin: 50px 10px 10px 50px;
+    font-size: 25px; 
+    letter-spacing: 1px;
+    word-spacing: 7px;
+    line-height: 30px; 
+    text-align: center; 
+}
+h1{
+    color: rgb(219, 213, 213);
+    text-align: center;
+    font-size: 38px;
+}
+.main img {
+    margin-block-start: 65px;
+    margin-bottom: 30px;
+}
+iframe{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+  /* Style Contacto */
+
+.formContacto ul{
+    text-align: center;
+    background-image: url(../images/publicocontacto.jpg);
+    border: solid 2px black;
+    list-style: none;
+    padding: 170px;
+    margin: 30px;
+    box-shadow: 30px 30px crimson;
+    
+}
+.formContacto ul li{
+    color: crimson;
+}
+/* Estilos Fechas */
+.divFechas{
+    padding: 80px;
+    margin: 20px;
+    background-color: crimson;
+    text-align: center;
+    
+}
+
+.divFechas:hover{
+    transform: scale(2);
+    transition-property: all;
+    transition-duration: 2s;
+}
+.navDiscos{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+/* Celular */
+
+@media (max-width: 468){
+	.header ul{
+		display: flex;
+        flex-direction: column;
+
+	}
+}
