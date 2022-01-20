@@ -265,10 +265,153 @@ iframe{
 
 /* Celular */
 
-@media (max-width: 468){
-	.header ul{
-		display: flex;
+@media (max-width: 1100px) {
+    /*Tamaño mediano*/
+    /*Index*/
+    .main-seccion1{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .p-main-seccion1{
+        margin: 50px 100px;
 
-	}
+    }
+    .pFooter{
+        display: none;
+    }
+    .imgIndex {
+        max-width: 420px;
+        margin-left: 20px;
+    }
+    .video1{
+        margin: 40px;
+        max-width: 400px;
+    }
+    .header ul {
+        list-style: none;
+        display: flex;
+        border: 3px white;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        margin: 2px;
+    }
+    .header li{
+        list-style-type: none;
+        margin: 5px;
+    }
+
+    /*Discografía */
+
 }
+
+@media (max-width: 750px){
+    /* discos */ 
+    .seccion-disco{
+        flex-direction: column;
+    }
+    .divNosotros{
+    height: 310vh;
+    width: 60vh;
+    font-size: 100px;
+    }
+
+}
+
+
+@media (max-width: 640px){
+    /* index */
+    .header {
+        flex-direction: column;
+        background-color: #000000;
+    }
+    .header ul {
+        list-style: none;
+        display: flex;
+        border: 3px white;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        margin: 2px;
+    }
+    .header li{
+        list-style-type: none;
+        margin: 2px;
+    }
+    .header img{
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+    .imgIndex {
+        max-width: 320px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .video1{
+        margin: 40px;
+        max-width: 320px;
+    }
+    .disco{
+        margin: 10px;
+        padding: 10px;
+    }
+        
+    .lista-temas{
+        margin: 10px;
+        padding: 10px;
+    }
+    /* CONTACTO*/
+    .formContacto ul{
+        padding: 30px;
+        margin: 15px;
+        height: 50vh;
+    }
+    /* nosotros */
+    .divNosotros{
+        height: 400vh;
+        width: 50vh;
+        font-size: 100px;
+        border: none;
+        }
+    
+}
+
+/* Celular */
+
+@media (max-width: 450px) {
+    /*Tamaño chico*/
+        .header {
+        flex-direction: column;
+        background-color: #000000;
+        }
+        /* discografia */ 
+        .disco{
+            margin: 5px;
+            padding: 5px;
+        }
+            
+        .lista-temas{
+            margin: 5px;
+            padding: 5px;
+        }
+        
+        /*footer */
+        .footer a{
+            margin: 5px;
+            padding: 5px;
+        }
+        /* CONTACTO */
+        .formContacto ul{
+            padding: 15px;
+            margin: 7px;
+            height: 50vh;
+            box-shadow: none;
+        }
+        /* nosotros */
+        .divNosotros{
+            word-spacing: 2px;
+        }
+        
+    }
